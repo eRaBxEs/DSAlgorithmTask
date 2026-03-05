@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func rotateLeft(arr []int, k int) []int {
+func RotateLeft(arr []int, k int) []int {
 	if len(arr) == 0 {
 		return arr
 	}
@@ -20,6 +20,6 @@ func rotateLeft(arr []int, k int) []int {
 func main() {
 	arrayOne := []int{3, 4, 5, 7, 9}
 	fmt.Printf("%#v\n", arrayOne)
-	rotatedArray := rotateLeft(arrayOne, 2)
+	rotatedArray := RotateLeft(arrayOne, 2)
 	fmt.Printf("%#v\n", rotatedArray)
 }

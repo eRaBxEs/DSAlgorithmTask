@@ -4,6 +4,18 @@ import (
 	"fmt"
 )
 
+/**
+1. Array Rotation
+Rotate an array to the left by K steps.
+
+Example:
+
+Input: arr = [1,2,3,4,5], K = 2
+
+Output: [3,4,5,1,2] (rotated left by 2 positions)
+
+**/
+
 func RotateLeft(arr []int, k int) []int {
 	if len(arr) == 0 {
 		return arr

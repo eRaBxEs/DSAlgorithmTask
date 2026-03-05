@@ -4,6 +4,19 @@ import (
 	"fmt"
 )
 
+/**
+
+2. Binary Gap
+Find the longest sequence of zeros in the binary representation of an integer, bounded by ones.
+
+Example:
+
+Input: N = 1041 (binary 10000010001)
+
+Output: 5 (the longest gap is between the first and second ones)
+
+**/
+
 func BinaryGap(n int) int {
 	for n > 0 && n&1 == 0 {
 		n >>= 1

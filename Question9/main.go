@@ -14,7 +14,7 @@ func firstMissingPositive(nums []int) int {
 		}
 	}
 
-	// step 2: check for numbers <= n and set numbers at index n - 1 to negative
+	// step 2: check for numbers <= n and set numbers at index n - 1 to negative if greater than 0
 	for i := 0; i < n; i++ {
 		val := abs(nums[i])
 

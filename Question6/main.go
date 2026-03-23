@@ -10,7 +10,11 @@ func IsPermutation(arr []int) int {
 		if num < 1 || num > len(arr) || seen[num] {
 			return 0
 		}
+
+		seen[num] = true
 	}
+
+	fmt.Println(seen)
 
 	return 1
 }
